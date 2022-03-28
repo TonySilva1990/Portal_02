@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    /*============[colors]============*/
+    --color--01: #fff;
+    --color--02: #00A80C;
+    --color--03: #FFD900;
+    --color--04: #411700;
+    --color--05: #606060;
+    --color--06: #DDDDDD;
+    /*============[sizers]============*/
+    --Size-width-100: 100%;
+    --Size-width-90: 90%;
+    --Size-heigth-10: 10%;
+    --Size-heigth-100: 100%;
+    --Size-icons: 1.2em;
+    --size-main: calc(100% - var(--size-left-menu));
+    --size-main-class: var(--size-main);
+    --size-left-menu: 15.688rem;
+    --size-heigth-100vh: 100vh;
+    /*============[overflow]============*/
+    --overflow-hidden: hidden;
+    --overflow-visible: visible;
+    /*============[borderSizer]============*/
+    --border-sizer: 1px;
+    --border-sizer-full: solid 1px var(--color--05);
+    /*============[padding]============*/
+    --padding-all: .8rem;
+    --padding-links: .5rem;
+    /*============[iconsSizers]============*/
+    --icon-sizer1: 1.5rem;
+    /*============[text transform]============*/
+    --text-transform: uppercase;
+    /*============[text weigth]============*/
+    --font-weigth: 700;
+}
+
+
+/*============[body]============*/
+
+body {
+    background: var(--color--01);
+    overflow-x: hidden;
+}
+
+
+/*============[icons]============*/
+
+.icon {
+    font-size: var(--icon-sizer1);
+    color: var(--color--05);
+    margin-right: .5rem;
+}
+
+
+/*============[content]============*/
+
+.content {
+    overflow: var(--overflow-hidden);
+    position: relative;
+    width: var(--Size-menu-100);
+    height: var(--Size-menu-100);
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: var(--size-left-menu);
+    height: var(--size-heigth-100vh);
+    background-color: var(--color--01);
+}
+
+
+/*============[block1]============*/
+
+.block-01 {
+    box-sizing: border-box;
+    padding: var(--padding-all);
+    width: var(--Size-width-100);
+    border-bottom: solid var(--border-sizer) var(--color--05);
+}
+
+.block-01 .branding {
+    display: flex;
+    width: var(--Size-width-100);
+}
+
+.block-01 .branding .branding-logo {
+    margin: 1rem auto;
+    width: 13rem;
+    height: 4.375rem;
+    background-image: url(/img/Colorido.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/*============[block2]============*/
+
+.block-02 {
+    box-sizing: border-box;
+    padding: var(--padding-all);
+    width: var(--Size-width-100);
+    background-color: var(--color--01);
+    border-bottom: solid var(--border-sizer) var(--color--05);
+}
+
+.block-02 .search {
+    width: var(--Size-width-100);
+}
+
+.block-02 .search .search-content {
+    position: relative;
+    display: flex;
+    width: var(--Size-width-100);
+}
+
+.block-02 .search .search-content .search-input {
+    position: relative;
+    top: 0rem;
+    left: 0rem;
+    width: var(--Size-width-100);
+    box-sizing: border-box;
+    padding: var(--padding-all);
+    padding-left: 3rem;
+    border: none;
+    background: var(--color--06);
+}
+
+.block-02 .search .search-content .bx {
+    z-index: 2;
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+    color: var(--color--05);
+}
+
+
+/*============[nav-menu]============*/
+
+.nav-menu {
+    box-sizing: border-box;
+    width: var(--Size-width-100);
+}
+
+.nav-menu .navigation-elements .navigation-intem {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.nav-menu .navigation-elements .navigation-intem .navigation-link {
+    box-sizing: border-box;
+    padding: var(--padding-links);
+    margin: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--color--05);
+    white-space: nowrap;
+    letter-spacing: 1.rem;
+    width: var(--Size-width-100);
+}
+
+
+/*============[block3 nav-menu]============*/
+
+.block-03 {
+    box-sizing: border-box;
+    padding: var(--padding-all);
+    width: var(--Size-width-100);
+    background-color: var(--color--01);
+    border-bottom: solid var(--border-sizer) var(--color--05);
+}
+
+
+/*============[block4 nav-menu]============*/
+
+.block-04 {
+    box-sizing: border-box;
+    padding: var(--padding-all);
+    width: var(--Size-width-100);
+    background-color: var(--color--01);
+    border-bottom: solid var(--border-sizer) var(--color--05);
+}
+
+
+/*============[block5 menu acount]============*/
+
+.block-05 {
+    margin-top: .5rem;
+    box-sizing: border-box;
+    padding: var(--padding-all);
+    width: var(--Size-width-100);
+    background-color: var(--color--01);
+}
+
+.block-05 .perfil {
+    overflow: hidden;
+    width: var(--Size-width-100);
+}
+
+.block-05 .perfil .perfil-picture {
+    border-radius: 100%;
+    width: 5rem;
+    height: 5rem;
+    background-image: url(/img/unnamed.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.block-05 .perfil .perfil-icon {
+    display: flex;
+    color: var(--color--05);
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 100%;
+    left: 3.5rem;
+    top: -1.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: var(--color--01);
+}
+
+.block-05 .perfil .perfil-nome {
+    position: relative;
+    color: var(--color--05);
+    text-transform: var(--text-transform);
+    font-weight: var(--font-weigth);
+    left: 5.3rem;
+    top: -5.3rem;
+}
+
+.block-05 .perfil .perfil-id {
+    position: relative;
+    color: var(--color--05);
+    text-transform: var(--text-transform);
+    font-weight: var(--font-weigth);
+    left: 5.3rem;
+    top: -5rem;
+}
+
+.block-05 .perfil .perfil-email {
+    text-align: center;
+    font-size: .8rem;
+    position: relative;
+    color: var(--color--05);
+    left: 0rem;
+    top: -4rem;
+}
+
+
+/*============[buttom tonggle]============*/
+
+.toggle {
+    position: relative;
+    top: 3vw;
+    right: -2vw;
+    transform: translateY(-50%) rotate(180deg);
+    height: 2vw;
+    width: 2vw;
+    background-color: var(--color--05);
+    color: var(--sidebar-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: var(--tran-05);
+}
+
+.toggle {
+    position: fixed;
+    top: 3rem;
+    left: 14.2rem;
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--color--05);
+}
+
+.toggle::before {
+    content: ">";
+    color: var(--color--01);
+}
+
+
+/*============[main content]============*/
+
+.main {
+    position: absolute;
+    left: var(--size-left-menu);
+    width: var(--size-main-class);
+    min-height: 100vh;
+    border-left: solid var(--border-sizer) var(--color--05);
+    background-color: var(--color--01);
+}
+
+.main .container01 {
+    position: absolute;
+    width: 40%;
+    height: 80vh;
+    border-right: solid var(--border-sizer) var(--color--05);
+}
+
+.main .container01 .box01 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    background-color: #cacaca;
+    border-bottom: var(--border-sizer-full);
+}
+
+.main .container01 .box02 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    background-color: #8a8a8a;
+}
+
+.main .container02 {
+    display: flex;
+    position: absolute;
+    left: 40%;
+    width: calc(100% - 40%);
+    height: 80vh;
+}
+
+.main .container02 .box03 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 80vh;
+    background-color: var(--color--06);
+    border-right: var(--border-sizer-full);
+    border-left: var(--border-sizer-full);
+}
+
+.main .container02 .box04 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100vh;
+    background-color: #c9c9c9;
+}
+
+.main .container03 {
+    display: flex;
+    position: absolute;
+    top: 80vh;
+    width: 70%;
+    height: calc(100% - 80vh);
+    border-top: var(--border-sizer-full);
+    border-right: var(--border-sizer-full);
+}
+
+.main .container03 .box05 {
+    background-color: #a3a3a3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+}
+
+
+/*============[houver events buttons]============*/
+
+.nav-menu .navigation-elements .navigation-intem .navigation-link:hover {
+    background-color: var(--color--05);
+}
+
+.nav-menu .navigation-elements li a:hover .icon,
+.nav-menu .navigation-elements li a:hover .text {
+    color: var(--color--01);
+}
